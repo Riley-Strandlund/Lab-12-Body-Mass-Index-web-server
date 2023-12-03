@@ -1,0 +1,18 @@
+    <form action="/calculate" method="GET">
+        <div class="bg-info-subtle p-3 text-center">
+            <h1> {{ title }}</h1> {{!-- The 'title' is calling the title variable from index.js--}}
+        </div>
+    {{!--.hbs is short for handlebars--}}
+        <div id="BMI-Form">
+            <div id="input">
+                <label for="Height">Height:</label>
+                <input v-model="height" value="0" type="number" id="Height" name="heightInput" style="margin-left:20px">
+                <br>
+                <label for="Weight">Weight:</label>
+                <input v-model="weight" value="0" type="number" id="Weight" name="weightInput" style="margin-left:15px">
+            </div>
+            <div>
+                <button class="btn btn-primary" type="submit" name="submit-button">Calculate</button>
+            </div> 
+        </div>
+    </form>
